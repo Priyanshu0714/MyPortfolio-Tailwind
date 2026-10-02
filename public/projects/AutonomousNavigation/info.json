@@ -1,0 +1,5 @@
+{
+  "title": "Autonomous Navigation & Computer Vision System",
+  "description": "Real-time navigation system using SLAM and LiDAR for mapping and localization on TurtleBot4, optimized for low-latency processing in dynamic indoor environments. Integrated YOLOv5 object detection and OCR text extraction pipelines with OpenCV and Tesseract.",
+  "link": "https://github.com/Priyanshu0714/TURTLEBOT4-with-LLM-integreation"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Intelligent Document Indexing & Query System",
+  "description": "Scalable document processing pipeline designed with microservices architecture in Go & Echo. Features async document uploads, Apache Tika extraction, indexed metadata storage in MinIO, MySQL, and MongoDB, and an NLP-based query engine for rapid retrieval.",
+  "link": "https://github.com/Priyanshu0714"
+}

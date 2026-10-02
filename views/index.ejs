@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Priyanshu Choudhary | Final-Year CS Engineer • Systems, Web & AI">
+    <meta name="description" content="Portfolio of Priyanshu Choudhary, final-year Computer Science Engineering student at Chandigarh University. Systems engineer, autonomous navigation intern at Rekhi MIND Lab, and full-stack developer.">
+    <meta name="keywords" content="Priyanshu Choudhary, Software Engineer, Portfolio, Go, Python, C++, ROS2, SLAM, Node.js, Express.js, MongoDB, Chandigarh University, Rekhi Foundation">
+    <meta name="author" content="Priyanshu Choudhary">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/images/unnamed.jpeg" type="image/jpeg">
+    <title>Priyanshu Choudhary - Software Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/src/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-neutral-900 font-sans selection:bg-black selection:text-white relative overflow-x-hidden min-h-screen">
+    
+    <!-- Subtle Monochrome Grid -->
+    <div class="fixed inset-0 engineering-grid pointer-events-none opacity-60 z-0"></div>
+
+    <!-- Navigation Bar (Classic Black) -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black text-white border-b border-neutral-800 transition-all duration-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo / Status -->
+            <a href="/" class="flex items-center gap-3 group">
+                <span class="font-mono text-base sm:text-lg font-bold text-white group-hover:text-neutral-300 transition-colors">
+                    &lt; / &gt; Priyanshu Choudhary
+                </span>
+                <span class="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-mono bg-neutral-900 text-neutral-300 border border-neutral-700">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Open to SWE Roles (2026/27)
+                </span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-2 lg:gap-4 text-sm font-medium text-neutral-300">
+                <a href="#about" class="px-3 py-1.5 rounded hover:text-white hover:bg-neutral-800 transition-colors">About</a>
+                <a href="#experience" class="px-3 py-1.5 rounded hover:text-white hover:bg-neutral-800 transition-colors">Experience</a>
+                <a href="#featured" class="px-3 py-1.5 rounded hover:text-white hover:bg-neutral-800 transition-colors">Featured</a>
+                <a href="#projects" class="px-3 py-1.5 rounded hover:text-white hover:bg-neutral-800 transition-colors">Projects</a>
+                <a href="#skills" class="px-3 py-1.5 rounded hover:text-white hover:bg-neutral-800 transition-colors">Skills</a>
+                <a href="#contact" class="px-3 py-1.5 rounded hover:text-white hover:bg-neutral-800 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden md:flex items-center gap-3">
+                <button id="resumeModalBtn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white text-black font-medium text-xs font-mono hover:bg-neutral-200 transition-all">
+                    <svg class="w-3.5 h-3.5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    Resume
+                </button>
+                <a href="https://github.com/Priyanshu0714" target="_blank" rel="noopener noreferrer" class="p-1.5 text-neutral-400 hover:text-white transition-colors" title="GitHub Profile">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobileMenuToggle" class="md:hidden p-2 text-white hover:text-neutral-300 focus:outline-none" aria-label="Toggle Navigation Menu">
+                <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer (Black Background) -->
+        <div id="mobileDrawer" class="hidden md:hidden border-b border-neutral-800 bg-black text-white px-5 pt-3 pb-6 space-y-3">
+            <div class="py-2 border-b border-neutral-800">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono bg-neutral-900 text-neutral-300 border border-neutral-700">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Open to Full-Time SWE Roles (2026/27)
+                </span>
+            </div>
+            <a href="#about" class="mobile-nav-link block py-2 text-neutral-300 hover:text-white">About</a>
+            <a href="#experience" class="mobile-nav-link block py-2 text-neutral-300 hover:text-white">Experience & Research</a>
+            <a href="#featured" class="mobile-nav-link block py-2 text-neutral-300 hover:text-white">Featured Systems</a>
+            <a href="#projects" class="mobile-nav-link block py-2 text-neutral-300 hover:text-white">All Projects</a>
+            <a href="#skills" class="mobile-nav-link block py-2 text-neutral-300 hover:text-white">Technical Skills</a>
+            <a href="#contact" class="mobile-nav-link block py-2 text-neutral-300 hover:text-white">Contact</a>
+            <div class="pt-3 border-t border-neutral-800 flex items-center justify-between">
+                <button id="mobileResumeBtn" class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white text-black text-xs font-mono font-medium">
+                    Resume (PDF)
+                </button>
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com/Priyanshu0714" target="_blank" class="text-neutral-400 hover:text-white">GitHub</a>
+                    <a href="https://www.linkedin.com/in/priyanshu-choudhary-93b68128b/" target="_blank" class="text-neutral-400 hover:text-white">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 pt-20">
+
+        <!-- HERO SECTION (Light Gray #f5f5f5 background like original) -->
+        <section id="about" class="w-full bg-[#f5f5f5] border-b border-gray-300 py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Column (Bio & Intro) -->
+                    <div class="lg:col-span-8 space-y-6">
+                        
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-white text-neutral-800 border border-gray-300 shadow-sm">
+                            <span>Chandigarh University • B.E. CSE (2023 - 2027)</span>
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-black leading-tight">
+                            Hi, I'm Priyanshu Choudhary
+                        </h1>
+
+                        <!-- Dynamic Role Headline -->
+                        <div class="flex items-center gap-2 font-mono text-lg sm:text-xl text-neutral-800 min-h-[32px]">
+                            <span class="text-black font-bold">&gt;</span>
+                            <span id="roleTypewriter">Systems & Backend Developer</span>
+                            <span class="cursor-blink text-black font-bold">|</span>
+                        </div>
+
+                        <p class="text-neutral-700 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
+                            I’m a Computer Science Engineering student passionate about <strong>software development and AI</strong>. I enjoy building real-world applications and working with <strong>Backend development, AI, Fullstack Technologies, and Robotics</strong>.
+                        </p>
+
+                        <!-- Primary CTAs (Solid Black & Clean White) -->
+                        <div class="flex flex-wrap items-center gap-3 pt-2">
+                            <a href="#featured" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-black hover:bg-neutral-800 text-white font-semibold text-sm transition-all shadow-sm">
+                                <span>View Projects</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                            </a>
+                            <button id="heroResumeBtn" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-black bg-white hover:bg-neutral-100 text-black text-sm font-semibold transition-all">
+                                <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                                <span>Resume</span>
+                            </button>
+                            <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-gray-300 bg-white hover:border-black text-neutral-800 hover:text-black text-sm transition-all">
+                                <span>Contact Me</span>
+                            </a>
+                        </div>
+
+                        <!-- Social Handles & Direct Contact -->
+                        <div class="flex flex-wrap items-center gap-4 pt-2 text-neutral-600 text-sm font-mono">
+                            <a href="https://github.com/Priyanshu0714" target="_blank" class="flex items-center gap-1.5 hover:text-black transition-colors font-medium">
+                                <svg class="w-4 h-4 fill-current text-black" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <span>•</span>
+                            <a href="https://www.linkedin.com/in/priyanshu-choudhary-93b68128b/" target="_blank" class="flex items-center gap-1.5 hover:text-black transition-colors font-medium">
+                                <svg class="w-4 h-4 fill-current text-black" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <span>•</span>
+                            <a href="https://codeforces.com/profile/priyanshu1407" target="_blank" class="flex items-center gap-1.5 hover:text-black transition-colors font-medium">
+                                 <img src="/codeforces-svgrepo-com.svg" alt="" class="w-4 h-4 fill-current text-black">
+                                <span>Codeforces</span>
+                            </a>
+                            <!-- <span class="text-neutral-800 font-medium">Codeforces: 1601 (Expert)</span> -->
+                        </div>
+
+                    </div>
+
+                    <!-- Right Column (Profile Picture) -->
+                    <div class="lg:col-span-4 flex flex-col items-center justify-center">
+                        <div class="relative w-64 h-64 sm:w-72 sm:h-72">
+                            <!-- Image Container -->
+                            <div class="relative w-full h-full rounded-full overflow-hidden border-2 border-black bg-white shadow-md p-1">
+                                <img src="/images/photo.png" alt="Priyanshu Choudhary" class="w-full h-full object-cover object-top rounded-full" onerror="this.src='/images/unnamed.jpeg'" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Engineering Highlights / Metrics Bar -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-12 pt-8 border-t border-gray-300 font-mono text-center">
+                    <div class="p-4 rounded-xl bg-white border border-gray-300 shadow-sm">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-black">8.09</div>
+                        <div class="text-xs text-neutral-600 mt-1 font-semibold">B.E. CSE CGPA</div>
+                        <div class="text-[11px] text-neutral-500">Chandigarh University</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white border border-gray-300 shadow-sm">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-black">1601</div>
+                        <div class="text-xs text-neutral-600 mt-1 font-semibold">Codeforces Expert</div>
+                        <div class="text-[11px] text-neutral-500">Competitive Programming</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white border border-gray-300 shadow-sm">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-black">13+</div>
+                        <div class="text-xs text-neutral-600 mt-1 font-semibold">Projects</div>
+                        <div class="text-[11px] text-neutral-500">Full-Stack, Go, AI & Robotics</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider Line -->
+        <div class="h-[1px] w-full bg-gray-300"></div>
+
+        <!-- EXPERIENCE & RESEARCH SECTION (White Background) -->
+        <section id="experience" class="py-16 sm:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="space-y-3 mb-10">
+                    <div class="inline-flex items-center gap-1.5 text-xs font-mono text-neutral-700 uppercase tracking-wider font-bold">
+                        <span>// Work History & Academic Leadership</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-black tracking-tight">Experience & Research</h2>
+                    <p class="text-neutral-600 text-sm sm:text-base max-w-2xl">
+                        Hands-on engineering experience spanning autonomous systems, computer vision research, and technical club leadership.
+                    </p>
+                </div>
+
+                <div class="space-y-8">
+                    
+                    <!-- Internship Card -->
+                    <div class="p-6 sm:p-8 rounded-2xl bg-[#f5f5f5] border border-gray-300 hover:border-black transition-all shadow-sm">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-gray-300 pb-4 mb-4">
+                            <div>
+                                <span class="inline-block px-2.5 py-0.5 rounded text-xs font-mono font-bold bg-black text-white mb-2">
+                                    Research Internship
+                                </span>
+                                <h3 class="text-xl sm:text-2xl font-bold text-black">Autonomous Navigation & Computer Vision Intern</h3>
+                                <div class="text-neutral-800 font-semibold text-sm mt-0.5">Rekhi Foundation, MIND Lab — Chandigarh University</div>
+                            </div>
+                            <div class="font-mono text-xs sm:text-sm text-neutral-700 bg-white px-3 py-1.5 rounded-lg border border-gray-300 w-fit font-medium">
+                                May 2025 – June 2025
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 text-neutral-800 text-sm leading-relaxed mb-6 font-normal">
+                            <div class="flex items-start gap-2.5">
+                                <span class="text-black font-mono font-bold mt-1">▹</span>
+                                <p>Built a real-time navigation and mapping system using <strong>SLAM</strong> and <strong>2D LiDAR</strong> on TurtleBot4 for dynamic indoor localization.</p>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <span class="text-black font-mono font-bold mt-1">▹</span>
+                                <p>Optimized sensor stream execution and trajectory generation to achieve low-latency execution during real-time robotic runs.</p>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <span class="text-black font-mono font-bold mt-1">▹</span>
+                                <p>Developed a computer vision perception pipeline integrating <strong>YOLOv5</strong> for fast obstacle detection and classification.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-gray-300 font-mono text-xs">
+                            <span class="text-neutral-700 font-bold">Stack:</span>
+                            <span class="px-2.5 py-1 rounded bg-white text-black border border-gray-300 font-medium">ROS2</span>
+                            <span class="px-2.5 py-1 rounded bg-white text-black border border-gray-300 font-medium">TurtleBot4</span>
+                            <span class="px-2.5 py-1 rounded bg-white text-black border border-gray-300 font-medium">LiDAR & SLAM</span>
+                            <span class="px-2.5 py-1 rounded bg-white text-black border border-gray-300 font-medium">YOLOv5</span>
+                            <span class="px-2.5 py-1 rounded bg-white text-black border border-gray-300 font-medium">Gazebo</span>
+                            <span class="px-2.5 py-1 rounded bg-white text-black border border-gray-300 font-medium">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Leadership & Research Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <!-- ROBO-VERSE Club -->
+                        <div class="p-6 rounded-2xl bg-[#f5f5f5] border border-gray-300 hover:border-black transition-all shadow-sm">
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-black text-white font-bold">
+                                    Leadership
+                                </span>
+                                <span class="text-xs font-mono text-neutral-600 font-medium">Chandigarh University</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-black mb-1">Secretary — ROBO-VERSE Club</h4>
+                            <p class="text-neutral-700 text-sm leading-relaxed mb-4">
+                                Directing technical robotics and AI initiatives, coordinating workshops on ROS2, microcontrollers (ESP32/Arduino), and competitive bot challenges for 200+ members.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+                                <span class="px-2 py-0.5 rounded bg-white border border-gray-300 text-neutral-800">Technical Leadership</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-gray-300 text-neutral-800">ROBOFEST 5.0 Preparation</span>
+                            </div>
+                        </div>
+
+                        <!-- Research Publications -->
+                        <div class="p-6 rounded-2xl bg-[#f5f5f5] border border-gray-300 hover:border-black transition-all shadow-sm">
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="px-2.5 py-0.5 rounded text-xs font-mono bg-black text-white font-bold">
+                                    Publications
+                                </span>
+                            </div>
+                            <h4 class="text-lg font-bold text-black mb-2">Research Papers & Book Chapters</h4>
+                            <div class="space-y-3 text-xs sm:text-sm text-neutral-700 leading-relaxed">
+                                <div class="flex items-start gap-2">
+                                    <span class="text-black font-mono font-bold mt-0.5">▪</span>
+                                    <p><strong>Elsevier (Under Publication):</strong> Contributing Author on a specialized book chapter examining Large Language Models (LLMs) and distributed inference architectures.</p>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <span class="text-black font-mono font-bold mt-0.5">▪</span>
+                                    <p><strong>I3CSET-2025:</strong> Co-Author, research paper on blockchain technology and decentralized consensus systems.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider Line -->
+        <div class="h-[1px] w-full bg-gray-300"></div>
+
+        <!-- FEATURED FLAGSHIP PROJECTS (Light Gray Background) -->
+        <section id="featured" class="py-16 sm:py-20 bg-[#f5f5f5]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="space-y-3 mb-12">
+                    <div class="inline-flex items-center gap-1.5 text-xs font-mono text-neutral-700 uppercase tracking-wider font-bold">
+                        <span>// Highlighted Systems Engineering</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-black tracking-tight">Featured Projects</h2>
+                    <p class="text-neutral-600 text-sm sm:text-base max-w-2xl">
+                        High-impact distributed architectures, ml pipelines, and full-stack software built with production considerations.
+                    </p>
+                </div>
+
+                <!-- Featured Cards Grid -->
+                <div class="grid grid-cols-1 gap-10">
+                    
+                    <!-- Project 1: Intelligent Document System (NEW) -->
+                    <div class="rounded-2xl bg-white border border-gray-300 hover:border-black transition-all overflow-hidden shadow-sm group">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                            <div class="lg:col-span-6 p-6 sm:p-8 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="px-2.5 py-0.5 rounded text-xs font-mono font-bold bg-black text-white">
+                                            Go Microservices
+                                        </span>
+                                        <span class="text-xs font-mono text-neutral-600 font-medium">Dec 2025 – March 2026</span>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-black group-hover:underline">
+                                        Intelligent Document Indexing & Query System
+                                    </h3>
+                                    <p class="text-neutral-700 text-sm leading-relaxed mt-3 mb-5">
+                                        A document processing pipeline designed with microservices in Go & Echo to ingest heterogeneous documents, extract entities and metadata using Apache Tika, store indexed assets in MinIO and hybrid SQL/NoSQL stores, and power an NLP-driven query engine.
+                                    </p>
+                                    
+                                    <div class="space-y-2 mb-6 text-xs sm:text-sm text-neutral-800">
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Engineered asynchronous multi-threaded ingestion pipeline for concurrent document parsing and entity extraction.</span>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Decoupled architecture into independent services: Ingestion, Tika Processing, and Semantic Query Service.</span>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Optimized query latency using indexed metadata storage across MySQL, MongoDB, and MinIO object storage.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex flex-wrap gap-1.5 font-mono text-xs mb-6">
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-black border border-gray-300 font-medium">Go (Golang)</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">Echo Framework</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">MinIO</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">Apache Tika</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">ClamAV</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">MongoDB</span>
+                                    </div>
+
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/Priyanshu0714/SWC_FS_23BCS12648_priyanshu" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-black hover:bg-neutral-800 text-white font-semibold text-xs transition-colors">
+                                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                                            <span>View Repository</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Preview Image -->
+                            <div class="lg:col-span-6 bg-neutral-100 flex items-center justify-center p-4 border-t lg:border-t-0 lg:border-l border-gray-300">
+                                <div class="w-full h-full min-h-[260px] rounded-xl overflow-hidden border border-gray-300 shadow-sm">
+                                    <img src="/projects/IntelligentDocumentSystem/image.jpeg" alt="Intelligent Document Indexing Dashboard" class="w-full h-full object-cover group-hover:scale-102 transition duration-300" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Autonomous Navigation & Vision Pipeline -->
+                    <div class="rounded-2xl bg-white border border-gray-300 hover:border-black transition-all overflow-hidden shadow-sm group">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                            <div class="lg:col-span-6 p-6 sm:p-8 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="px-2.5 py-0.5 rounded text-xs font-mono font-bold bg-black text-white">
+                                            Robotics & Computer Vision
+                                        </span>
+                                        <span class="text-xs font-mono text-neutral-600 font-medium">May 2025 – June 2025</span>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-black group-hover:underline">
+                                        Autonomous Navigation & Computer Vision System
+                                    </h3>
+                                    <p class="text-neutral-700 text-sm leading-relaxed mt-3 mb-5">
+                                        Developed on TurtleBot4 at Rekhi MIND Lab. Integrated 2D LiDAR and SLAM algorithms for real-time indoor mapping, low-latency obstacle avoidance, YOLOv5 visual recognition, and OpenCV/Tesseract text recognition.
+                                    </p>
+                                    
+                                    <div class="space-y-2 mb-6 text-xs sm:text-sm text-neutral-800">
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Configured Cartographer SLAM and Nav2 stack for autonomous indoor exploration and waypoint following.</span>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Deployed fine-tuned YOLOv5 models for dynamic obstacle identification on live camera frames.</span>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Extracted directional text and safety signage through OpenCV filtering and Tesseract OCR.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex flex-wrap gap-1.5 font-mono text-xs mb-6">
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-black border border-gray-300 font-medium">ROS2</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">TurtleBot4</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">LiDAR SLAM</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">YOLOv5</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">Python</span>
+                                    </div>
+
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/Priyanshu0714/TURTLEBOT4-with-LLM-integreation" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-black hover:bg-neutral-800 text-white font-semibold text-xs transition-colors">
+                                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                                            <span>View Robotics Repo</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Preview Image -->
+                            <div class="lg:col-span-6 bg-neutral-100 flex items-center justify-center p-4 border-t lg:border-t-0 lg:border-l border-gray-300">
+                                <div class="w-full h-full min-h-[260px] rounded-xl overflow-hidden border border-gray-300 shadow-sm">
+                                    <img src="/projects/AutonomousNavigation/image.png" alt="TurtleBot SLAM LiDAR Lab Setup" class="w-full h-full object-cover group-hover:scale-102 transition duration-300" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Internship Placement Assistant -->
+                    <div class="rounded-2xl bg-white border border-gray-300 hover:border-black transition-all overflow-hidden shadow-sm group">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                            <div class="lg:col-span-6 p-6 sm:p-8 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="px-2.5 py-0.5 rounded text-xs font-mono font-bold bg-black text-white">
+                                            ML & Recommendation Engine
+                                        </span>
+                                        <span class="text-xs font-mono text-neutral-600 font-medium">Feb 2025 – March 2025</span>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-black group-hover:underline">
+                                        Internship Placement Assistant
+                                    </h3>
+                                    <p class="text-neutral-700 text-sm leading-relaxed mt-3 mb-5">
+                                        Engineered an intelligent career platform that crawls job platforms via a customized ETL pipeline, processes and cleans opportunity data with Pandas, and ranks recommendations using Sentence Transformer embeddings.
+                                    </p>
+                                    
+                                    <div class="space-y-2 mb-6 text-xs sm:text-sm text-neutral-800">
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Automated scraping, text sanitation, and deduplication of live internship postings into structured relational models.</span>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Vectorized skill sets and job descriptions to perform semantic cosine similarity matching via PyTorch.</span>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Exposed Django REST APIs for query filtration and personalized match scoring.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex flex-wrap gap-1.5 font-mono text-xs mb-6">
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-black border border-gray-300 font-medium">Django</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">Python</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">Sentence Transformers</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">PyTorch</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">Pandas</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">ETL Pipeline</span>
+                                    </div>
+
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/Priyanshu0714/Internship-Placement-Assistant/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-black hover:bg-neutral-800 text-white font-semibold text-xs transition-colors">
+                                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                                            <span>View Repository</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Preview Image -->
+                            <div class="lg:col-span-6 bg-neutral-100 flex items-center justify-center p-4 border-t lg:border-t-0 lg:border-l border-gray-300">
+                                <div class="w-full h-full min-h-[260px] rounded-xl overflow-hidden border border-gray-300 shadow-sm">
+                                    <img src="/projects/InternshipPlacementAssistant/image.png" alt="Internship Placement Assistant Dashboard" class="w-full h-full object-cover group-hover:scale-102 transition duration-300" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Campus Connect -->
+                    <div class="rounded-2xl bg-white border border-gray-300 hover:border-black transition-all overflow-hidden shadow-sm group">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                            <div class="lg:col-span-6 p-6 sm:p-8 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <span class="px-2.5 py-0.5 rounded text-xs font-mono font-bold bg-black text-white">
+                                            Modular Full-Stack
+                                        </span>
+                                        <span class="text-xs font-mono text-neutral-600 font-medium">March 2025 – April 2025</span>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-black group-hover:underline">
+                                        Campus Connect
+                                    </h3>
+                                    <p class="text-neutral-700 text-sm leading-relaxed mt-3 mb-5">
+                                        A modular communication and academic collaboration platform designed to foster peer networking, event notifications, and student forums across campus. Decoupled core modules into an independent service layout.
+                                    </p>
+                                    
+                                    <div class="space-y-2 mb-6 text-xs sm:text-sm text-neutral-800">
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Designed modular service architecture isolating authentication, messaging feeds, and event boards.</span>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Implemented secure REST APIs with session validation and indexed MongoDB schemas.</span>
+                                        </div>
+                                        <div class="flex items-start gap-2">
+                                            <span class="text-black font-mono font-bold mt-0.5">▹</span>
+                                            <span>Built responsive UI using EJS server templates with custom Tailwind design components.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex flex-wrap gap-1.5 font-mono text-xs mb-6">
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-black border border-gray-300 font-medium">Node.js</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">Express.js</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">MongoDB</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">EJS</span>
+                                        <span class="px-2.5 py-1 rounded bg-[#f5f5f5] text-neutral-800 border border-gray-300 font-medium">TailwindCSS</span>
+                                    </div>
+
+                                    <div class="flex items-center gap-3">
+                                        <a href="https://github.com/Priyanshu0714/CampusConnect" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-black hover:bg-neutral-800 text-white font-semibold text-xs transition-colors">
+                                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                                            <span>View Repository</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project Preview Image -->
+                            <div class="lg:col-span-6 bg-neutral-100 flex items-center justify-center p-4 border-t lg:border-t-0 lg:border-l border-gray-300">
+                                <div class="w-full h-full min-h-[260px] rounded-xl overflow-hidden border border-gray-300 shadow-sm">
+                                    <img src="/projects/CampusConnect/image.png" alt="Campus Connect Platform Preview" class="w-full h-full object-cover group-hover:scale-102 transition duration-300" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider Line -->
+        <div class="h-[1px] w-full bg-gray-300"></div>
+
+        <!-- EXPLORE ALL PROJECTS (White Background) -->
+        <section id="projects" class="py-16 sm:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+                    <div class="space-y-3">
+                        <div class="inline-flex items-center gap-1.5 text-xs font-mono text-neutral-700 uppercase tracking-wider font-bold">
+                            <span>// Work</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-black tracking-tight">Explore All Projects</h2>
+                        <p class="text-neutral-600 text-sm max-w-xl">
+                            Filter by engineering domain or toggle the complete archive of full-stack apps, AI models, and automation tools.
+                        </p>
+                    </div>
+
+                    <!-- Domain Filter Tabs (Black & White) -->
+                    <div class="flex flex-wrap items-center gap-2 p-1.5 rounded-xl bg-[#f5f5f5] border border-gray-300 text-xs font-mono">
+                        <button class="filter-tab px-3 py-1.5 rounded-lg transition-all text-white bg-black font-semibold border border-black" data-category="all">
+                            All (<%= projects.length %>)
+                        </button>
+                        <button class="filter-tab px-3 py-1.5 rounded-lg transition-all text-neutral-700 hover:text-black font-medium" data-category="systems">
+                            Systems & Backend
+                        </button>
+                        <button class="filter-tab px-3 py-1.5 rounded-lg transition-all text-neutral-700 hover:text-black font-medium" data-category="ai-robotics">
+                            AI & Robotics
+                        </button>
+                        <button class="filter-tab px-3 py-1.5 rounded-lg transition-all text-neutral-700 hover:text-black font-medium" data-category="web">
+                            Full-Stack Web
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project Cards Grid -->
+                <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <% projects.forEach((p, idx) => { %>
+                        <div class="project-card flex flex-col justify-between rounded-xl bg-[#f5f5f5] border border-gray-300 hover:border-black transition-all p-5 hover:-translate-y-1 duration-200 shadow-sm group <%= idx >= 6 ? 'project-hidden hidden' : '' %>"
+                             data-category="<%= p.category %>"
+                             data-index="<%= idx %>">
+                            <div>
+                                <!-- Card Image Header -->
+                                <div class="relative w-full h-44 rounded-lg overflow-hidden border border-gray-300 mb-4 bg-white">
+                                    <img src="<%= p.image %>" alt="<%= p.title %>" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='/projects/MyPortfolio/image.png';" />
+                                    <div class="absolute top-2 right-2">
+                                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-black text-white font-medium shadow-sm">
+                                            <%= p.category === 'systems' ? 'Systems' : p.category === 'ai-robotics' ? 'AI / ML' : 'Full Stack' %>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <h4 class="text-lg font-bold text-black group-hover:underline line-clamp-1 mb-2">
+                                    <%= p.title %>
+                                </h4>
+                                
+                                <p class="text-neutral-700 text-xs leading-relaxed line-clamp-3 mb-4 font-normal">
+                                    <%= p.description %>
+                                </p>
+                            </div>
+
+                            <div>
+                                <!-- Tech tags -->
+                                <div class="flex flex-wrap gap-1 font-mono text-[11px] mb-4">
+                                    <% p.tech.slice(0, 4).forEach(t => { %>
+                                        <span class="px-2 py-0.5 rounded bg-white text-neutral-800 border border-gray-300 font-medium"><%= t %></span>
+                                    <% }) %>
+                                    <% if (p.tech.length > 4) { %>
+                                        <span class="px-1.5 py-0.5 rounded text-neutral-500 text-[10px]">+<%= p.tech.length - 4 %></span>
+                                    <% } %>
+                                </div>
+
+                                <!-- Links -->
+                                <div class="flex items-center justify-between pt-3 border-t border-gray-300 text-xs font-mono">
+                                    <% if (p.github) { %>
+                                        <a href="<%= p.github %>" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-black hover:underline font-semibold">
+                                            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                                            <span>Source Code</span>
+                                        </a>
+                                    <% } else { %>
+                                        <span class="text-neutral-500 font-medium">Academic / Lab Project</span>
+                                    <% } %>
+
+                                    <% if (p.demo) { %>
+                                        <a href="<%= p.demo %>" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 text-black font-bold hover:underline">
+                                            <span>Live</span>
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                        </a>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
+
+                <!-- View More / Collapse Toggle Button -->
+                <div class="mt-10 text-center">
+                    <button id="toggleArchiveBtn" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-black hover:bg-neutral-800 text-white text-sm font-mono font-semibold transition-all shadow-sm">
+                        <span id="toggleArchiveText">Show All Projects (<%= projects.length %>)</span>
+                        <svg id="toggleArchiveIcon" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider Line -->
+        <div class="h-[1px] w-full bg-gray-300"></div>
+
+        <!-- TECHNICAL SKILLS MATRIX (Light Gray Background) -->
+        <section id="skills" class="py-16 sm:py-20 bg-[#f5f5f5]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="space-y-3 mb-12">
+                    <div class="inline-flex items-center gap-1.5 text-xs font-mono text-neutral-700 uppercase tracking-wider font-bold">
+                        <span>// Technical Tooling & Core Stack</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-black tracking-tight">Technical Skills</h2>
+                    <p class="text-neutral-600 text-sm sm:text-base max-w-2xl">
+                        Proficient in systems languages, modern web stacks, distributed databases, and robotics frameworks.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Category 1: Languages -->
+                    <div class="p-6 rounded-2xl bg-white border border-gray-300 shadow-sm">
+                        <div class="flex items-center gap-2 mb-4 font-mono text-xs text-black font-bold">
+                            <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            <span>LANGUAGES</span>
+                        </div>
+                        <ul class="space-y-2.5 font-mono text-xs sm:text-sm text-neutral-800">
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span class="font-bold text-black">Go (Golang)</span>
+                                <span class="text-neutral-500 text-[11px]">Systems / Backend</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>C & C++</span>
+                                <span class="text-neutral-500 text-[11px]">DSA & Coding</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>Python</span>
+                                <span class="text-neutral-500 text-[11px]">AI / ML & ROS</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>JavaScript</span>
+                                <span class="text-neutral-500 text-[11px]">Full Stack</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>Shell / Bash</span>
+                                <span class="text-neutral-500 text-[11px]">Automation</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1">
+                                <span>HTML5 & CSS</span>
+                                <span class="text-neutral-500 text-[11px]">Web UI</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2: Backend & Frameworks -->
+                    <div class="p-6 rounded-2xl bg-white border border-gray-300 shadow-sm">
+                        <div class="flex items-center gap-2 mb-4 font-mono text-xs text-black font-bold">
+                            <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                            <span>BACKEND & FRAMEWORKS</span>
+                        </div>
+                        <ul class="space-y-2.5 font-mono text-xs sm:text-sm text-neutral-800">
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span class="font-bold text-black">Echo Framework</span>
+                                <span class="text-neutral-500 text-[11px]">Go Microservices</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>Node.js & Express</span>
+                                <span class="text-neutral-500 text-[11px]">RESTful APIs</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>Next.js & React</span>
+                                <span class="text-neutral-500 text-[11px]">Frontend Apps</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>Django</span>
+                                <span class="text-neutral-500 text-[11px]">Python Backend</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>EJS & TailwindCSS</span>
+                                <span class="text-neutral-500 text-[11px]">Server Render</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1">
+                                <span>Microservices Architecture</span>
+                                <span class="text-neutral-500 text-[11px]">System Design</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3: AI, ML & Robotics -->
+                    <div class="p-6 rounded-2xl bg-white border border-gray-300 shadow-sm">
+                        <div class="flex items-center gap-2 mb-4 font-mono text-xs text-black font-bold">
+                            <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                            <span>AI, ML & ROBOTICS</span>
+                        </div>
+                        <ul class="space-y-2.5 font-mono text-xs sm:text-sm text-neutral-800">
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span class="font-bold text-black">ROS2 & Gazebo</span>
+                                <span class="text-neutral-500 text-[11px]">Simulation</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>SLAM & 2D LiDAR</span>
+                                <span class="text-neutral-500 text-[11px]">Navigation</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>YOLOv5 & OpenCV</span>
+                                <span class="text-neutral-500 text-[11px]">Vision Pipeline</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>Sentence Transformers</span>
+                                <span class="text-neutral-500 text-[11px]">NLP & Embeddings</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>PyTorch & Pandas</span>
+                                <span class="text-neutral-500 text-[11px]">Data & ML</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1">
+                                <span>TurtleBot4</span>
+                                <span class="text-neutral-500 text-[11px]">Hardware</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4: Databases & DevOps -->
+                    <div class="p-6 rounded-2xl bg-white border border-gray-300 shadow-sm">
+                        <div class="flex items-center gap-2 mb-4 font-mono text-xs text-black font-bold">
+                            <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                            <span>DATABASES & CLOUD</span>
+                        </div>
+                        <ul class="space-y-2.5 font-mono text-xs sm:text-sm text-neutral-800">
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span class="font-bold text-black">MongoDB</span>
+                                <span class="text-neutral-500 text-[11px]">NoSQL</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>MySQL</span>
+                                <span class="text-neutral-500 text-[11px]">Relational DB</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>MinIO S3</span>
+                                <span class="text-neutral-500 text-[11px]">Object Storage</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>Docker</span>
+                                <span class="text-neutral-500 text-[11px]">Containers</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1 border-b border-gray-200">
+                                <span>Linux (Ubuntu)</span>
+                                <span class="text-neutral-500 text-[11px]">OS Environment</span>
+                            </li>
+                            <li class="flex items-center justify-between py-1">
+                                <span>Git & GitHub</span>
+                                <span class="text-neutral-500 text-[11px]">Version Control</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider Line -->
+        <div class="h-[1px] w-full bg-gray-300"></div>
+
+        <!-- EDUCATION & CERTIFICATIONS (White Background) -->
+        <section id="education" class="py-16 sm:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="space-y-3 mb-10">
+                    <div class="inline-flex items-center gap-1.5 text-xs font-mono text-neutral-700 uppercase tracking-wider font-bold">
+                        <span>// Academic Background</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-black tracking-tight">Education</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- Degree -->
+                    <div class="p-6 rounded-2xl bg-[#f5f5f5] border border-gray-300 hover:border-black transition-all shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="px-2 py-0.5 rounded text-xs font-mono bg-black text-white font-bold">B.E. Degree</span>
+                                <span class="text-xs font-mono text-neutral-600 font-medium">2023 – 2027</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-black">Chandigarh University</h4>
+                            <div class="text-neutral-800 text-sm font-semibold">B.E. Computer Science and Engineering</div>
+                            <p class="text-neutral-600 text-xs mt-2">Gharuan, Mohali, Punjab</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-gray-300 font-mono text-sm text-black flex items-center justify-between">
+                            <span class="font-medium">Current CGPA</span>
+                            <span class="font-bold text-base text-black">8.09 / 10.0</span>
+                        </div>
+                    </div>
+
+                    <!-- High School -->
+                    <div class="p-6 rounded-2xl bg-[#f5f5f5] border border-gray-300 hover:border-black transition-all shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="px-2 py-0.5 rounded text-xs font-mono bg-neutral-200 text-neutral-800 border border-gray-300 font-bold">Secondary (CBSE)</span>
+                                <span class="text-xs font-mono text-neutral-600 font-medium">2021 – 2022</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-black">Oxford Public School</h4>
+                            <div class="text-neutral-800 text-sm font-medium">Physics, Chemistry, Math & CS</div>
+                            <p class="text-neutral-600 text-xs mt-2">Ranchi, Jharkhand</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-gray-300 font-mono text-sm text-black flex items-center justify-between">
+                            <span class="font-medium">Board Score</span>
+                            <span class="font-bold text-base text-black">91.0%</span>
+                        </div>
+                    </div>
+
+                    <!-- Secondary -->
+                    <div class="p-6 rounded-2xl bg-[#f5f5f5] border border-gray-300 hover:border-black transition-all shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="px-2 py-0.5 rounded text-xs font-mono bg-neutral-200 text-neutral-800 border border-gray-300 font-bold">Primary (ICSE)</span>
+                                <span class="text-xs font-mono text-neutral-600 font-medium">2009 – 2021</span>
+                            </div>
+                            <h4 class="text-lg font-bold text-black">St. Francis School</h4>
+                            <div class="text-neutral-800 text-sm font-medium">General Education</div>
+                            <p class="text-neutral-600 text-xs mt-2">Samlong, Ranchi, Jharkhand</p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-gray-300 font-mono text-sm text-black flex items-center justify-between">
+                            <span class="font-medium">Board Score</span>
+                            <span class="font-bold text-base text-black">78.8%</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider Line -->
+        <div class="h-[1px] w-full bg-gray-300"></div>
+
+        <!-- CONTACT SECTION (Light Gray Background) -->
+        <section id="contact" class="py-16 sm:py-20 bg-[#f5f5f5]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Left: Contact Info -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="space-y-3">
+                            <div class="inline-flex items-center gap-1.5 text-xs font-mono text-neutral-700 uppercase tracking-wider font-bold">
+                                <span>// Get In Touch</span>
+                            </div>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold text-black tracking-tight">Let's Connect</h2>
+                            <p class="text-neutral-700 text-sm sm:text-base leading-relaxed font-normal">
+                                I am currently open to full-time Software Engineering roles, internship opportunities, and collaborative engineering projects. Feel free to reach out directly or send a message.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4 font-mono text-xs sm:text-sm">
+                            <!-- Email Item -->
+                            <div class="flex items-center justify-between p-3.5 rounded-xl bg-white border border-gray-300 shadow-sm">
+                                <div class="flex items-center gap-3">
+                                    <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    <span class="text-neutral-900 select-all font-medium">choudhary.priyanshu1401@gmail.com</span>
+                                </div>
+                                <button id="copyEmailBtn" class="px-3 py-1 rounded bg-[#f5f5f5] hover:bg-neutral-200 text-black border border-gray-300 text-xs font-semibold transition-colors" title="Copy Email">
+                                    Copy
+                                </button>
+                            </div>
+
+                            <!-- Social Item -->
+                            <div class="p-3.5 rounded-xl bg-white border border-gray-300 shadow-sm flex items-center justify-between">
+                                <div class="text-neutral-600 text-xs font-semibold">Profiles:</div>
+                                <div class="flex items-center gap-4">
+                                    <a href="https://github.com/Priyanshu0714" target="_blank" rel="noopener noreferrer" class="text-black font-semibold hover:underline transition-colors">GitHub</a>
+                                    <a href="https://www.linkedin.com/in/priyanshu-choudhary-93b68128b/" target="_blank" rel="noopener noreferrer" class="text-black font-semibold hover:underline transition-colors">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Active MongoDB Contact Form -->
+                    <div class="lg:col-span-7">
+                        <div class="p-6 sm:p-8 rounded-2xl bg-white border border-gray-300 shadow-sm">
+                            <h3 class="text-xl font-bold text-black mb-2">Send a Direct Message</h3>
+                            <p class="text-neutral-600 text-xs sm:text-sm mb-6">
+                                Messages are stored directly in my MongoDB database and forwarded to my inbox.
+                            </p>
+
+                            <!-- Success Alert -->
+                            <div id="formSuccessAlert" class="hidden mb-6 p-4 rounded-xl bg-neutral-900 text-white text-sm font-mono flex items-center gap-2">
+                                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Thank you! Your message has been received. I'll get back to you soon.</span>
+                            </div>
+
+                            <!-- Error Alert -->
+                            <div id="formErrorAlert" class="hidden mb-6 p-4 rounded-xl bg-red-100 border border-red-300 text-red-800 text-sm font-mono flex items-center gap-2">
+                                <svg class="w-5 h-5 text-red-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                <span id="errorMessageText">Failed to send message. Please try again or email directly.</span>
+                            </div>
+
+                            <form id="contactForm" action="/GetInTouch" method="POST" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div class="space-y-1.5">
+                                        <label for="formName" class="block font-mono text-xs font-bold text-neutral-800">Name</label>
+                                        <input id="formName" type="text" name="name" required placeholder="Your Name" class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-gray-400 focus:border-black focus:ring-1 focus:ring-black focus:outline-none text-black text-sm transition-colors" />
+                                    </div>
+                                    <div class="space-y-1.5">
+                                        <label for="formEmail" class="block font-mono text-xs font-bold text-neutral-800">Email Address</label>
+                                        <input id="formEmail" type="email" name="email" required placeholder="your.email@example.com" class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-gray-400 focus:border-black focus:ring-1 focus:ring-black focus:outline-none text-black text-sm transition-colors" />
+                                    </div>
+                                </div>
+
+                                <div class="space-y-1.5">
+                                    <label for="formMessage" class="block font-mono text-xs font-bold text-neutral-800">Message</label>
+                                    <textarea id="formMessage" name="message" rows="4" required placeholder="Write your message..." class="w-full px-3.5 py-2.5 rounded-lg bg-white border border-gray-400 focus:border-black focus:ring-1 focus:ring-black focus:outline-none text-black text-sm transition-colors resize-none"></textarea>
+                                </div>
+
+                                <button id="formSubmitBtn" type="submit" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-black hover:bg-neutral-800 text-white font-semibold text-sm transition-all shadow-sm">
+                                    <span id="submitBtnText">Send Message</span>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (Classic Black) -->
+    <footer class="bg-black text-neutral-300 py-8 text-center text-xs font-mono border-t border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © <%= new Date().getFullYear() %> Priyanshu Choudhary. All rights reserved.
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#about" class="hover:text-white transition-colors">Back to Top ↑</a>
+                <span>•</span>
+                <a href="/pdfview" target="_blank" class="hover:text-white transition-colors">Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- RESUME PREVIEW MODAL (Black and White Theme) -->
+    <div id="resumeModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 backdrop-blur-sm p-4">
+        <div class="relative w-full max-w-4xl h-[90vh] bg-white border border-gray-400 rounded-2xl overflow-hidden flex flex-col shadow-2xl">
+            <!-- Modal Header -->
+            <div class="px-5 py-3 border-b border-gray-300 flex items-center justify-between bg-black text-white">
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <span class="font-mono text-xs sm:text-sm font-semibold text-white">Priyanshu_Choudhary_Resume.pdf</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="/resume.pdf" download="Priyanshu_Choudhary_Resume.pdf" class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-white hover:bg-neutral-200 text-black text-xs font-mono font-bold transition-colors">
+                        Download
+                    </a>
+                    <a href="/pdfview" target="_blank" class="text-xs font-mono text-neutral-300 hover:text-white transition-colors font-medium">
+                        Full Tab ↗
+                    </a>
+                    <button id="closeResumeModalBtn" class="p-1 rounded-md text-neutral-300 hover:text-white hover:bg-neutral-800 transition-colors" aria-label="Close modal">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Modal Body (Iframe) -->
+            <div class="flex-1 bg-neutral-100 w-full h-full">
+                <iframe id="resumeIframe" src="/resume.pdf" class="w-full h-full border-0" title="Resume Document"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Client Script -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
