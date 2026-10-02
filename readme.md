@@ -1,36 +1,127 @@
-#  My Portfolio
+# 🚀 Priyanshu's Portfolio
 
-[Visit My Portfolio](www.priyanshu.works)
+[![Live](https://img.shields.io/badge/Live-priyanshu.works-blue?style=for-the-badge&logo=google-chrome)](https://www.priyanshu.works)
+[![GitHub](https://img.shields.io/badge/GitHub-Priyanshu0714-black?style=for-the-badge&logo=github)](https://github.com/Priyanshu0714)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/priyanshu-choudhary-93b68128b/)
 
-## Table of Contents
+> A personal portfolio website built with Node.js, Express, EJS, Tailwind CSS, and MongoDB — showcasing my skills, projects, and professional journey.
 
-- [Project Overview](#Project-Overview)
+---
+
+## 📋 Table of Contents
+
+- [Overview](#overview)
 - [Features](#features)
-- [Technologies Used](#technologies-used)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Scripts](#scripts)
 - [Contact](#contact)
 
-## Project Overview
+---
 
-This is a personal portfolio website designed to showcase my skills, projects, and professional experience. It highlights key projects, education, skills, and contact details in a responsive and visually appealing format.
+## Overview
 
-## Features
+This is a full-stack personal portfolio website designed to present my skills, selected projects, and professional background in a clean, responsive, and visually engaging format. The backend is powered by Node.js and Express with EJS templating, while the frontend uses Tailwind CSS for styling. Contact form submissions are stored in MongoDB Atlas.
 
-- **Responsive Design:** The portfolio is fully responsive and works well on devices of all sizes.
-- **Interactive Layout:** Each section has a clear structure and is easy to navigate.
-- **Projects Showcase:** Detailed display of selected projects with links to their live versions and GitHub repositories.
-- **Contact Form:** Users can easily contact me through the embedded contact form.
-- **Dynamic Content:** Uses JavaScript to create an engaging user experience with smooth transitions)
+---
 
-## Technologies Used
-- **Frontend:** HTML, Tailwind CSS, JavaScript
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Hosting:** Render
+## ✨ Features
 
+- **Responsive Design** — Fully optimized for all screen sizes (mobile, tablet, desktop)
+- **Projects Showcase** — Dynamically rendered project cards with live demo and GitHub links
+- **Contact Form** — Submissions are saved to MongoDB Atlas with validation; supports both JSON and redirect responses
+- **Resume Viewer** — Inline PDF resume viewer via a dedicated `/pdfview` route
+- **Dynamic Content** — JavaScript-driven smooth transitions and interactive UI elements
+- **Google Search Console Verified** — Verified domain ownership included
 
-# Contact
-Feel free to reach out to me through the contact form on the portfolio or connect with me at:
+---
 
-- **Email:** choudhary.priyanshu1401@gmail.com
-- **GitHub:** [Priyanshu0714](https://github.com/Priyanshu0714)
-- **LinkedIn:** [priyanshu-choudhary-93b68128b](https://www.linkedin.com/in/priyanshu-choudhary-93b68128b/)
+## 🛠 Tech Stack
+
+| Layer      | Technology                          |
+|------------|--------------------------------------|
+| Frontend   | HTML, Tailwind CSS v3, JavaScript    |
+| Templating | EJS (Embedded JavaScript)            |
+| Backend    | Node.js, Express.js                  |
+| Database   | MongoDB Atlas (via Mongoose)         |
+| Hosting    | Render                               |
+
+---
+
+## 📁 Project Structure
+
+```
+new portfolio/
+├── app.js                  # Main Express server
+├── originalscript.js       # Original/backup script
+├── tailwind.config.js      # Tailwind CSS configuration
+├── package.json
+├── data/
+│   └── projects.js         # Static projects data
+├── public/
+│   ├── script.js           # Client-side JavaScript
+│   ├── resume.pdf          # Resume file
+│   ├── images/             # Static images
+│   ├── projects/           # Per-project static files
+│   └── src/                # Tailwind CSS source & output
+└── views/
+    ├── index.ejs           # Main portfolio page
+    └── pdfview.ejs         # Resume PDF viewer page
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/)
+- A [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Priyanshu0714/MyPortfolio-Tailwind.git
+cd MyPortfolio-Tailwind
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the server
+node app.js
+```
+
+The server will start on **http://localhost:3001** by default.
+
+---
+
+## 📜 Scripts
+
+| Command       | Description                                      |
+|---------------|--------------------------------------------------|
+| `node app.js` | Start the Express server                         |
+| `npm run build` | Build Tailwind CSS (watches for changes)       |
+
+To watch and rebuild Tailwind CSS during development:
+
+```bash
+npm run build
+```
+
+---
+
+## 📬 Contact
+
+Feel free to reach out through the contact form on the portfolio or connect with me directly:
+
+- 🌐 **Website:** [priyanshu.works](https://www.priyanshu.works)
+- 📧 **Email:** choudhary.priyanshu1401@gmail.com
+- 💻 **GitHub:** [Priyanshu0714](https://github.com/Priyanshu0714)
+- 💼 **LinkedIn:** [priyanshu-choudhary-93b68128b](https://www.linkedin.com/in/priyanshu-choudhary-93b68128b/)
+
+---
+
+<p align="center">Made with ❤️ by Priyanshu Choudhary</p>
