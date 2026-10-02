@@ -1,10 +1,10 @@
-# 🚀 Priyanshu's Portfolio
+# 🚀 Portfolio
 
-[![Live](https://img.shields.io/badge/Live-priyanshu.works-blue?style=for-the-badge&logo=google-chrome)](https://www.priyanshu.works)
+[![Live](https://img.shields.io/badge/Live-priyanshuchoudhary.tech-blue?style=for-the-badge&logo=google-chrome)](https://priyanshuchoudhary.tech)
 [![GitHub](https://img.shields.io/badge/GitHub-Priyanshu0714-black?style=for-the-badge&logo=github)](https://github.com/Priyanshu0714)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/priyanshu-choudhary-93b68128b/)
 
-> A personal portfolio website built with Node.js, Express, EJS, Tailwind CSS, and MongoDB — showcasing my skills, projects, and professional journey.
+> A personal portfolio website built with Node.js, Express, EJS, Tailwind CSS, and MongoDB showcasing my skills, projects, and professional journey.
 
 ---
 
@@ -15,7 +15,6 @@
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
-- [Scripts](#scripts)
 - [Contact](#contact)
 
 ---
@@ -117,7 +116,7 @@ npm run build
 
 Feel free to reach out through the contact form on the portfolio or connect with me directly:
 
-- 🌐 **Website:** [priyanshu.works](https://www.priyanshu.works)
+- 🌐 **Website:** [priyanshu.works](https://www.priyanshuchoudhary.tech)
 - 📧 **Email:** choudhary.priyanshu1401@gmail.com
 - 💻 **GitHub:** [Priyanshu0714](https://github.com/Priyanshu0714)
 - 💼 **LinkedIn:** [priyanshu-choudhary-93b68128b](https://www.linkedin.com/in/priyanshu-choudhary-93b68128b/)
