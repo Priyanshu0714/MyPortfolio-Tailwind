@@ -59,24 +59,33 @@ const projects = [
     badge: "AI & Semantic Search"
   },
   {
-    id: "campus-connect",
-    title: "Campus Connect",
-    category: "web",
-    featured: true,
-    date: "March 2025 – April 2025",
-    role: "Full-Stack Developer",
-    description: "A collaborative student networking platform designed to unify university communications, academic resource sharing, and peer forum discussions.",
-    highlights: [
-      "Architected backend using modular service design (auth, messaging, peer forum feeds).",
-      "Implemented RESTful endpoints with secure session auth and database indexing.",
-      "Crafted an engaging student community dashboard with real-time UI states."
-    ],
-    tech: ["Node.js", "Express.js", "MongoDB", "EJS", "TailwindCSS", "JavaScript"],
-    image: "/projects/CampusConnect/image.png",
-    github: "https://github.com/Priyanshu0714/CampusConnect",
-    demo: null,
-    badge: "Full-Stack Platform"
-  },
+  id: "campus-connect",
+  title: "Campus Connect v2.0",
+  category: "web",
+  featured: true,
+  date: "Sep 2026 – Present",
+  role: "Full-Stack Developer",
+  description: "A full-stack campus social platform featuring real-time communication, student networking, and campus event discovery.",
+  highlights: [
+    "Implemented bcrypt password hashing, legacy migration, rate limiting, and persistent sessions.",
+    "Integrated Socket.io for real-time messaging and MongoDB TTL indexes for 24-hour stories.",
+    "Built REST APIs, infinite scrolling, activity notifications, and event RSVP functionality."
+  ],
+  tech: [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "Socket.io",
+    "EJS",
+    "Tailwind CSS",
+    "Cloudinary"
+  ],
+  image: "/projects/CampusConnect/image.png",
+  github: "https://github.com/Priyanshu0714/CampusConnect",
+  demo: null,
+  badge: "Full-Stack Platform"
+},
   {
     id: "travelmate",
     title: "TravelMate",
