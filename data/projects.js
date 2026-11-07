@@ -1,39 +1,39 @@
 const projects = [
   {
     id: "intelligent-document-system",
-    title: "Intelligent Document Indexing & Query System",
+    title: "Intelligent Document Processing System",
     category: "systems",
     featured: true,
-    date: "Dec 2025 – March 2026",
+    date: "Dec 2025 – Present",
     role: "Lead Systems Architect & Full-Stack",
-    description: "A distributed document processing pipeline built to ingest multi-format files, extract structured entities with Apache Tika, index metadata into MinIO, MySQL, and MongoDB, and serve an NLP-powered semantic query engine.",
+    description: "An event-driven document processing platform in Go. Files upload directly to MinIO via presigned URLs, then Kafka consumers scan them with ClamAV, extract text and metadata with Apache Tika, and index the results in MongoDB, behind JWT authentication and per-user isolated storage.",
     highlights: [
-      "Designed microservices architecture separating ingestion, document processing, and query services.",
-      "Engineered asynchronous processing pipeline for high-concurrency document uploads.",
-      "Optimized query latency via indexed metadata storage across hybrid databases.",
-      "Integrated NLP-driven query engine enabling automated summary and report generation."
+      "Built an event-driven pipeline with Kafka, decoupling uploads from ClamAV scanning, Tika extraction and indexing, cutting upload response time by 97.5% (800 ms to 20 ms).",
+      "Processed documents at 25 docs/min using 3 Kafka consumers, with retries for failed messages.",
+      "Implemented JWT authentication with bcrypt-hashed credentials in PostgreSQL, and per-user MinIO isolation enforced by ownership checks on 5 endpoints (401/403 on unauthorized access).",
+      "Blocked malware uploads by scanning every file with ClamAV before processing.",
+      "Wrote Go unit tests for the auth middleware and cross-user access control."
     ],
-    tech: ["Go", "Echo", "MinIO", "MySQL", "MongoDB", "Apache Tika", "Docker"],
-    image: "/projects/IntelligentDocumentSystem/image.jpeg",
+    tech: ["Go", "Echo", "Kafka", "PostgreSQL", "MongoDB", "MinIO", "Apache Tika", "ClamAV", "Next.js", "JWT"],
+    image: "/projects/IntelligentDocumentSystem/image.png",
     github: "https://github.com/Priyanshu0714/collabsphere/",
     demo: null,
-    badge: "Go Microservices"
+    badge: "Event-Driven Go"
   },
-  {
+    {
     id: "autonomous-navigation-vision",
     title: "Autonomous Navigation & Computer Vision System",
     category: "ai-robotics",
     featured: true,
     date: "May 2025 – June 2025",
-    role: "Intern @ Rekhi Foundation, MIND Lab",
-    description: "Real-time navigation and perception system developed for TurtleBot4 in dynamic indoor environments. Leveraged 2D LiDAR and SLAM for sub-second mapping and localization alongside YOLOv5 vision inference.",
+    role: "Autonomous Navigation & Computer Vision Intern @ Rekhi Foundation, MIND Lab",
+    description: "A real-time navigation and perception system for a TurtleBot4 in indoor environments. It uses 2D LiDAR and SLAM on ROS2 for mapping and localization, with YOLOv5 object detection and a Tesseract OCR pipeline running alongside.",
     highlights: [
-      "Engineered real-time SLAM and LiDAR mapping pipeline for obstacle avoidance and path planning.",
-      "Optimized sensor stream execution to minimize latency during live robot navigation runs.",
-      "Deployed YOLOv5 computer vision model for real-time indoor object recognition.",
-      "Implemented automated text and sign OCR extraction using OpenCV and Tesseract."
+      "Built a real-time navigation system with SLAM and LiDAR on ROS2 for mapping and localization, optimized for low-latency processing.",
+      "Developed a YOLOv5 object detection pipeline and an OCR pipeline using Tesseract for text extraction.",
+      "Reduced processing overhead by subscribing selectively to only the required ROS2 topics (filtered LiDAR scans and camera frames), cutting latency from 210 ms to 85 ms (~60%)."
     ],
-    tech: ["ROS2", "Python", "TurtleBot4", "LiDAR", "SLAM", "YOLOv5", "OpenCV", "Gazebo"],
+    tech: ["ROS2", "Python", "TurtleBot4", "2D LiDAR", "SLAM", "YOLOv5", "Tesseract", "RViz", "Gazebo"],
     image: "/projects/AutonomousNavigation/image.png",
     github: "https://github.com/Priyanshu0714/TURTLEBOT4-with-LLM-integreation",
     demo: null,
@@ -60,26 +60,29 @@ const projects = [
   },
   {
   id: "campus-connect",
-  title: "Campus Connect v2.0",
+  title: "Campus Connect V2.0",
   category: "web",
   featured: true,
-  date: "Sep 2026 – Present",
+  date: "Oct 2026 – Nov 2026",
   role: "Full-Stack Developer",
-  description: "A full-stack campus social platform featuring real-time communication, student networking, and campus event discovery.",
+  description: "A full-stack campus social platform with real-time chat, stories, notifications and peer discovery. Redis caching keeps feeds fast, and the backend is secured with bcrypt, Redis-backed sessions and rate limiting.",
   highlights: [
-    "Implemented bcrypt password hashing, legacy migration, rate limiting, and persistent sessions.",
-    "Integrated Socket.io for real-time messaging and MongoDB TTL indexes for 24-hour stories.",
-    "Built REST APIs, infinite scrolling, activity notifications, and event RSVP functionality."
+    "Built a full-stack campus social platform with real-time chat, stories, notifications and peer discovery over WebSockets (Socket.io).",
+    "Cut feed latency by 97% and story latency by 91% by adding Redis caching with TTL, reducing response times from 450 ms to 11 ms (Postman, 1000 req, local testing).",
+    "Designed REST APIs with cursor-based pagination for infinite scroll, Cloudinary media uploads, and MongoDB TTL indexes that auto-expire stories after 24 hours.",
+    "Secured the platform with bcrypt password hashing, migration of legacy plaintext passwords, Redis-backed sessions, and rate limiting on endpoints (20 requests per 15 minute window)."
   ],
   tech: [
     "Node.js",
     "Express.js",
     "MongoDB",
     "Mongoose",
+    "Redis",
     "Socket.io",
+    "WebSockets",
+    "Cloudinary",
     "EJS",
-    "Tailwind CSS",
-    "Cloudinary"
+    "Tailwind CSS"
   ],
   image: "/projects/CampusConnect/image.png",
   github: "https://github.com/Priyanshu0714/CampusConnect",
